@@ -52,3 +52,8 @@ form > div {
   padding-top: 12px;
   font-size: 0.75em;
 }
+
+input:focus:invalid {
+  color: orangered;
+  border: 2px solid orangered;
+}

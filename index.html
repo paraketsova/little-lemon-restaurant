@@ -18,7 +18,17 @@
   <img src="logo.png">
 </header>
 <main>
-
+  <form method="post">
+    <div>
+      <label for="user">Username:</label><br>
+      <input type="text" id="user" name="user" required minlength="2"><br>
+    </div>
+    <div>
+      <label for="pass">Password:</label><br>
+      <input type="password" id="pass" name="pass" required minlength="2"><br>
+    </div>
+    <input type="submit" id="btnLogIn" value="Log In">
+  </form>
 </main>
 </body>
 
