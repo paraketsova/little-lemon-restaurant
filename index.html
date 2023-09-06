@@ -18,6 +18,7 @@
   <img src="logo.png">
 </header>
 <main>
+<!--  AUTHORISATION FORM  -->
   <form method="post">
     <div>
       <label for="user">Username:</label><br>
@@ -29,6 +30,34 @@
     </div>
     <input type="submit" id="btnLogIn" value="Log In">
   </form>
+
+  <hr />
+  <!--    BOOKING FORM   -->
+  <form method="post">
+    <div>
+      <label for="bookingEmail">Email Adress:</label><br>
+      <input type="email" id="bookingEmail" name="bookingEmail" required><br>
+    </div>
+
+    <div>
+      <label for="bookingDate">Date of Booking:</label><br>
+      <input type="date" id="bookingDate" name="bookingDate" required><br>
+    </div>
+
+    <div>
+      <label for="numberOfPeople">Number of people:</label><br>
+      <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" max="8" value="2">
+    </div>
+
+    <div>
+      <label for="agreement">I agree to the cancellation policy</label><br>
+      <input type="checkbox" id="agreement" name="agreement" required><br>
+    </div>
+
+    <input type="submit" value="Submit"/>
+  </form>
+
+
 </main>
 </body>
 
