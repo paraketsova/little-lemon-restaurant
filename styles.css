@@ -11,7 +11,7 @@ body {
 body {
   background-color: cornsilk;
   font-family: 'Poppins', sans-serif;
-  margin: 3rem 5%;
+  margin: 1rem 5%;
 }
 
 h1 {
@@ -30,11 +30,13 @@ header > img {
 }
 
 nav ul {
+  padding-left: 3rem;
+  margin-top: 2rem;
   list-style: none;
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  padding-left: 3rem;
+  background-color: #475841;
 }
 
 nav li {
@@ -42,38 +44,39 @@ nav li {
   text-decoration:none;
   padding: 0 2rem;
   font-family: 'PT Serif', serif;
-
+  cursor: pointer;
 }
 
 a:link {
   text-decoration: none;
-  color: #a63c06;
+  color: #F4CE14;
 }
 
 a:visited {
   text-decoration: none;
-  color: #a63c06;
+  color: #F4CE14;
 }
 
 
 a:hover {
   text-decoration: none;
-  color: #074E01;
+  color: cornsilk;
 }
 
 a:active {
   text-decoration: none;
-  color: #074E01;
+  color: cornsilk;
 }
 
+
 main {
-  min-height: 65vh;
+  min-height: 60vh;
   flex-grow: 1;
 }
 
 section {
   display: flex;
-  margin-top: 2rem;
+  /*margin-top: 1.5rem;*/
 }
 
 section article {
@@ -85,19 +88,19 @@ article p {
   margin-bottom: 1rem;
 }
 
-.middle {
+.middle-column {
   font-weight: bolder;
 }
 
-.left img {
+.left-column img {
   height: 15rem;
 }
 
-.middle img {
+.middle-column img {
   height: 20rem;
 }
 
-.right img {
+.right-column img {
   height: 25rem;
 }
 
@@ -107,6 +110,52 @@ article p {
 
 .about img {
   height: 25rem;
+}
+
+form input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 white;
+  box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px white;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  margin-bottom: 1rem;
+
+  &:focus {
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+  }
+
+}
+
+
+.button:link, .button:visited {
+  box-shadow: 0 10px 14px -7px #475841;
+  background:linear-gradient(to bottom, #f4cf14 5%, #faa507 100%);
+  color: cornsilk;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #475841;
+}
+
+.button:hover {
+  background:linear-gradient(to bottom, #faa507 5%, #f4cf14 100%);
+  color: chocolate;
+}
+.button:active {
+  position:relative;
+  top:1px;
 }
 
 footer {
@@ -125,68 +174,3 @@ footer img {
   height: 3rem;
   margin-bottom: 2rem;
 }
-
-/*===========Booking, Main, Login, About===================*/
-/*body {*/
-/*  background-color: #E0E0E2;*/
-/*}*/
-
-/*ul {*/
-/*  list-style-type: none;*/
-/*  text-align: center;*/
-/*  padding: 0;*/
-/*}*/
-
-/*li {*/
-/*  display: inline;*/
-/*}*/
-
-/*main {*/
-/*  text-align: center;*/
-/*}*/
-
-/*footer {*/
-/*  text-align: center;*/
-/*}*/
-
-/*h1 {*/
-/*  color: #721817;*/
-/*}*/
-
-/*h2 {*/
-/*  color: #721817;*/
-/*}*/
-
-/*.center-text {*/
-/*  text-align: center;*/
-/*}*/
-
-/*img {*/
-/*  display: block;*/
-/*  margin-left: auto;*/
-/*  margin-right: auto;*/
-/*}*/
-
-/*h2 > span {*/
-/*  color: #FA9F42;*/
-/*  font-size: 0.75em;*/
-/*}*/
-
-/*form {*/
-/*  margin: 2rem auto;*/
-/*}*/
-
-/*form > div {*/
-/*  margin-top: 0.5em;*/
-/*  margin-bottom: 0.5em;*/
-/*}*/
-
-/*#copyright {*/
-/*  padding-top: 12px;*/
-/*  font-size: 0.75em;*/
-/*}*/
-
-/*input:focus:invalid {*/
-/*  color: orangered;*/
-/*  border: 2px solid orangered;*/
-/*}*/
