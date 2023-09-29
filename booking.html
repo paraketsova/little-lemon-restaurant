@@ -28,7 +28,8 @@
 <body>
   <div class="container">
     <header class="header">
-      <img src="images/Asset%2016@4x.png" alt="logo little-lemon yellow">
+      <img class="logo-long" src="images/ll-logo-long.png" alt="logo little-lemon yellow">
+      <img class="logo-mini" src="images/ll-logo-small.png" alt="logo little-lemon yellow">
     </header>
 
     <nav>
@@ -41,44 +42,83 @@
     </nav>
 
     <main class="main">
-      <h1>Book a table</h1>
-      <video width="520"  controls >
-        <source src="images/video-cooking-pizza-in-a-traditional-oven.mp4" type="video/mp4">
-      </video>
+      <section class="general">
+        <article>
+          <h1>Book a table</h1>
+          <p>
+            Little Lemon is a place to gather, and you can basically spend all your waking hours with us.
+            Many people come here, so we recommend you book a table so we can get the chance to meet you.
+            At our outdoor spaces, it's drop-in, and remember - first come, first served!
+          </p>
+          <p>
+            Are you 9 people or more? Call us +46 111 22 333 44
+          </p>
+        </article>
+      </section>
 
-      <!--    BOOKING FORM   -->
-      <form method="post">
-        <div>
-          <label for="bookingEmail">Email:</label><br>
-          <input type="email" id="bookingEmail" name="bookingEmail" required><br>
-        </div>
+      <section class="columns">
+        <article class="left-column">
+          <img src="images/little-lemon-booking-table.jpeg" alt="little-lemon restaurant photo table">
+        </article>
 
-        <div>
-          <label for="bookingDate">Date of Booking:</label><br>
-          <input type="date" id="bookingDate" name="bookingDate" required><br>
-        </div>
+        <article class="middle-column">
+          <!--    BOOKING FORM   -->
+          <form method="post">
+            <div>
+              <label for="bookingEmail">Email:</label><br>
+              <input type="email" id="bookingEmail" name="bookingEmail" required><br>
+            </div>
 
-        <div>
-          <label for="numberOfPeople">Number of people:</label><br>
-          <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" max="8" value="2">
-        </div>
+            <div>
+              <label for="bookingDate">Date of Booking:</label><br>
+              <input type="date" id="bookingDate" name="bookingDate" required><br>
+            </div>
 
-        <a href="#" class="button" type="submit">Book Now</a>
-      </form>
+            <label>Choose one:</label>
+            <div class='meal'>
+              <label>
+                <input type="radio" class="option-input radio" name="example" checked />
+                Lunch
+              </label>
+              <label>
+                <input type="radio" class="option-input radio" name="example" />
+                Brunch
+              </label>
+              <label>
+                <input type="radio" class="option-input radio" name="example" />
+                Dinner
+              </label>
+            </div>
+
+            <div>
+              <label for="numberOfPeople">Number of guests:</label><br>
+              <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" max="8" value="2">
+            </div>
+
+            <a href="#" class="button" type="submit">Book Now</a>
+          </form>
+        </article>
+
+        <article class="right-column">
+          <video width="520"  controls >
+            <source src="images/video-cooking-pizza-in-a-traditional-oven.mp4" type="video/mp4">
+          </video>
+        </article>
+      </section>
     </main>
-
 
     <footer class="footer">
       <div class="logo">
-        <img src="images/Asset%2014@4x.png" alt="logo little-lemon grey">
+        <img class="logo-footer-long" src="images/ll-footer-logo-long.png" alt="logo little-lemon grey">
+        <img class="logo-footer-small" src="images/ll-footer-logo-small.png" alt="logo little-lemon grey">
       </div>
-      <div >
+      <div class="info">
         <p>
           Copyright Little lemon©️2023
         </p>
         <p>
           Email: kohjek@hottempmail.cc
-          Phone: +46 111 22 333
+          Phone: +46 111 22 333 44
         </p>
       </div>
     </footer>
